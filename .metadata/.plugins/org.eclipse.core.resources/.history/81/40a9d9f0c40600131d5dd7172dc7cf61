@@ -1,0 +1,8 @@
+import java.util.Date;
+import java.util.logging.Logger;
+
+
+public class estudoDeDatas {
+	Date dateToDelete = new Date(new Date().getDate() - 7);
+	Date dateTo = new Date(new Date().getDate() - 7);
+}

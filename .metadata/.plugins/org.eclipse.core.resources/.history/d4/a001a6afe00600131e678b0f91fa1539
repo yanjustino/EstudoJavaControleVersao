@@ -1,0 +1,46 @@
+package br.com.estudo.java.sistemas;
+
+/*
+ * Classe controladora de sistema
+ */
+public class ControladorDeSistema {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * Classe Sistema implementada no arquivo
+		 * Sistema.java
+		 */
+		Sistema sistema = new Sistema();
+		sistema.setVersao(1.0);
+		
+		/*
+		 * Método pra mostrar qual é a versão do sistema
+		 * Implementado logo abaixo do método Main
+		 */
+		MensagemDaVersaoDoSistema(sistema);
+
+		/*
+		 * Fazendo upgrade de versão com while
+		 */
+		while (sistema.getVersao() < 10) {
+			double versao = sistema.getVersao();
+			System.out.println(versao);
+			sistema.setVersao(versao + 1);
+		}
+	}
+
+	public static void MensagemDaVersaoDoSistema(Sistema sistema) {
+		if (sistema.isVersaoDesenvolvimento()) {
+			System.out
+					.println("ATENÇÃO : Versão do sitema é de desenvolvimento");
+
+		} else if (sistema.isVersaoBeta()) {
+			System.out.println("ATENÇÃO : Versão do sitema é beta");
+
+		} else if (sistema.isVersaoFinal()) {
+			System.out.println("ATENÇÃO : Versão do sitema é a Final");
+
+		}
+	}
+}

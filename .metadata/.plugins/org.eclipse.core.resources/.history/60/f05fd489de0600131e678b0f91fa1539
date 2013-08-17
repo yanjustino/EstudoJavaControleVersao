@@ -1,0 +1,26 @@
+package br.com.estudo.java.sistemas;
+
+public class Sistema {
+
+	/*
+	 * variável privada : visto apenas na classe
+	 * recebe e guarda o valor da versão
+	 */
+	private double versao;
+
+	/*
+	 * Método get recupera da variável privada
+	 * o número da versão
+	 */
+	public double getVersao() {
+		return versao;
+	}
+
+	/*
+	 * Método set guarda na variável privada
+	 * o número da versão
+	 */	
+	public void setVersao(double versao) {
+		this.versao = versao;
+	}
+}

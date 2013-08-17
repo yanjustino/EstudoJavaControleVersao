@@ -1,0 +1,30 @@
+package br.com.estudo.java.sistemas;
+
+/*
+ * Classe 
+ */
+public class ValidadorDeSistema {
+
+	public static void main(String[] args) {
+		Sistema sistema = new Sistema();
+		sistema.setVersao(1.0);
+
+		if (sistema.isVersaoDesenvolvimento()) {
+			System.out.println("Versão do sitema é de desenvolvimento");
+
+		} else if (sistema.isVersaoBeta()) {
+			System.out.println("Versão do sitema é beta");
+
+		} else if (sistema.isVersaoFinal()) {
+			System.out.println("Versão do sitema é beta");
+
+		}
+		
+		while(sistema.getVersao() < 10)
+		{
+			double versao = sistema.getVersao();
+			System.out.println(versao);
+			sistema.setVersao(versao++);
+		}
+	}
+}

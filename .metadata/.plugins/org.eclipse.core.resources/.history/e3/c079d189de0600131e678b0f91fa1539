@@ -1,0 +1,10 @@
+package br.com.estudo.java.sistemas;
+
+
+public  class ValidadorDeSistema {
+	
+	public static void main(String[] args)
+	{
+		
+	}
+}

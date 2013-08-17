@@ -1,0 +1,14 @@
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.logging.Logger;
+
+
+public  class estudoDeDatas {
+	
+	public static void main(String[] args)
+	{
+		Date date = new Date();
+		System.out.println(date.getDate());
+		System.out.println(new SimpleDateFormat("dd/MM/yyyy").format(date));
+	}
+}

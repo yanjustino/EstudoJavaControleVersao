@@ -1,0 +1,13 @@
+package br.com.estudo.java.sistemas;
+
+
+public  class ValidadorDeSistema {
+	
+	public static void main(String[] args)
+	{
+		Sistema sistema  = new Sistema();
+		sistema.setVersao(1.0);
+		
+		
+	}
+}
